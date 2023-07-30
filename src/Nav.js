@@ -7,7 +7,7 @@ function Nav() {
     <div className={style.items}>
         <img src={logo} className={style.logoo}/>
      
-    <Link className={style.item} to ="/" >Home</Link>
+    <Link className={style.item} to ="/Project-StepFresh/" >Home</Link>
     <Link className={style.item} to ="/category">Category</Link>
     <Link className={style.item} to="/cart">Cart</Link>
     <Link className={style.item} to="/account">Account</Link>

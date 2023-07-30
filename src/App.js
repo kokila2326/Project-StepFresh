@@ -55,7 +55,7 @@ useEffect(()=>{
    <Router>
     <Nav/>
     <Routes>
-      <Route path="/" exact element ={<Home/>}/>
+      <Route path="/Project-StepFresh/" exact element ={<Home/>}/>
       <Route path="/category" exact element ={<Categories/>}/>
       <Route path="/cart" exact element ={<Cart setStore={setStore} store={store} total={total}/>}/>
       <Route path="/account" exact element ={<Account/>}/>
