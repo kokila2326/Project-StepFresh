@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+}
+
+.imgg {
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    margin-left: 27%;
+    margin-top: 20px;
+}
+
+.imgg > img {
+    width: 100%;
+    animation: slider 19s linear infinite;
+}
+.picture > img{
+    width: 90%;
+}
+
+@keyframes slider {
+    25%  { transform: translateX(-100%); }
+    50%  { transform: translateX(-200%); }
+    75%  { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+
+.downloadapp {
+    display: flex;
+}
+
+.butn {
+    display: flex;
+    padding: 0%;
+    width: 150%;
+
+}
+
+.butn > img {
+    width: 25%;
+    padding: 5%;
+
+}
+
+
+.smallcont{
+    background-color: rgb(174, 230, 171);
+    padding: 3%;
+    text-align: center;
+
+}
+.smallcont > p {
+    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ mark {
+    color: rgb(3, 103, 24);
+    font-size: 200%;
+    background-color: rgb(174, 230, 171);
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.downloadapp{
+    padding: 5%;
+}
+
+/* Responsive CSS using media queries */
+
+@media (max-width: 1024px) {
+    .imgg {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .imgg {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+    .imgg {
+        width: 100%;
+        margin-left: 0;
+    }
+}

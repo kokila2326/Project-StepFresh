@@ -1,0 +1,73 @@
+/* Assuming your style class names are defined as follows: */
+/* .card, .title, .note, .input1, .input2, .msg, .button */
+
+.card {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgb(174, 230, 171);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .note {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input1,
+  .input2 {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color:rgb(182, 233, 182) ;
+  }
+  
+  .msg {
+    font-size: 14px;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  /* Optional: Adjust the button colors when the background color is changed by hovering */
+  button:hover {
+    background-color: rgb(7, 67, 7);
+    color: rgb(255, 255, 255);
+  }
+  
