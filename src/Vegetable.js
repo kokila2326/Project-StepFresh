@@ -13,6 +13,8 @@ import radish from '../src/Components/Images/radish.jpg'
 import garlic from '../src/Components/Images/garlic.jpg'
 import style from "../src/Components/Css/vegetable.module.css"
 import Product from './Product'
+import { Link } from 'react-router-dom'
+import {BsFillArrowRightCircleFill} from "react-icons/bs";
 
 
 
@@ -73,12 +75,12 @@ function Vegetable({add,setSearch}) {
         },
         {
             name: "Capsicum",
-            price: "₹66",
+            price: "66",
             image: capsicum
         },
         {
             name: "Radish",
-            price: "₹33",
+            price: "33",
             image: radish
         }
     ])
@@ -99,6 +101,7 @@ function Vegetable({add,setSearch}) {
     <div className={style.topics}>Vegetable</div><br></br>
     <div className={style.container}>
     <Product fru={actdata} add={add} />
+    <Link to ="/Fruits"><BsFillArrowRightCircleFill className={style.nextlogo}/></Link>
     </div>
    
     </>

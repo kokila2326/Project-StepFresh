@@ -16,6 +16,8 @@ import Howworks from './Howworks'
 import Contact from './Contact'
 import Careers from './Careers'
 import Locate from './Locate'
+import Terms from './Terms'
+import Hygiene from './Hygiene'
 
 function App() {
 
@@ -37,23 +39,27 @@ const calc=()=>{
   });
   return total
  }
-const add=(x)=>{
-  setStore([...store,{...x,qty:1}])
-  
-}
+
+ const isItemAlreadyInStore = (itemToCheck) => {
+  return store.some(item => item.name === itemToCheck.name); // Adjust the comparison based on your item structure
+};
+const add = (x) => {
+  if (isItemAlreadyInStore(x)) {
+    console.log("Item already exists");
+    alert("This product already exists in the store");
+  } else {
+    console.log("Adding item");
+    setStore([...store, { ...x, qty: 1 }]);
+  }
+};
+
 useEffect(()=>{
   setTotal(calc())
 },[store])
-
-
-     
-
-
-
   return (
     !loading &&(
    <Router>
-    <Nav/>
+    <Nav store={store}/>
     <Routes>
       <Route path="/Project-StepFresh/" exact element ={<Home/>}/>
       <Route path="/category" exact element ={<Categories/>}/>
@@ -69,6 +75,8 @@ useEffect(()=>{
       <Route path="/Contact"exact element={<Contact/>}/>
       <Route path="/Careers"exact element={<Careers/>}/>
       <Route path="/Locate"exact element={<Locate/>}/>
+      <Route path="/Terms" exact element={<Terms/>}/>
+      <Route path="/Hygiene" exact element ={<Hygiene/>}/>
     </Routes>
     <Footer/>
    </Router>)

@@ -15,6 +15,9 @@ import grapes from '../src/Components/Images/grapes.jpg'
 import cherry from '../src/Components/Images/berry.jpg'
 import style from "../src/Components/Css/vegetable.module.css"
 import Product from './Product'
+import {BsFillArrowRightCircleFill} from "react-icons/bs";
+import {BsArrowLeftCircleFill} from "react-icons/bs";
+import { Link } from 'react-router-dom'
 
 function Fruits({add}) {
   const [fru,setfru]=useState([
@@ -105,10 +108,14 @@ const [actdata,setActdata]=useState(fru)
     </div>
     <div className={style.topics}>Fruits</div><br></br>
     <div className={style.container}>
-    <Product fru={actdata} add={add}/>
+   { actdata.length >0 ? <Product fru={actdata} add={add}/>:<h1 className={style.noitems}>No items found</h1>}
+
     </div>
+    <Link to ="/Vegetable"><BsArrowLeftCircleFill className={style.beforelogo}/></Link>
+    <Link to ="/Sweets"><BsFillArrowRightCircleFill className={style.nextlogo}/></Link>
     </>
   )
 }
+
 
 export default Fruits

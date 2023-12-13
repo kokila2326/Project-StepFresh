@@ -14,6 +14,9 @@ import unibic from '../src/Components/Images/unibic.jpeg'
 import lotte from '../src/Components/Images/lotte.webp'
 import style from "../src/Components/Css/vegetable.module.css"
 import Product from './Product'
+import {BsFillArrowRightCircleFill} from "react-icons/bs";
+import {BsArrowLeftCircleFill} from "react-icons/bs";
+import { Link } from 'react-router-dom'
 
 function Biscuits({add}) {
   const [biscuits,setfru]=useState([
@@ -97,6 +100,8 @@ const [stores,setStore]=useState("")
     <div className={style.container}>
     <Product fru={actdata} add={add} />
     </div>
+    <Link to ="/Sweets"><BsArrowLeftCircleFill className={style.beforelogo}/></Link>
+    <Link to ="/Vegetable"><BsFillArrowRightCircleFill className={style.nextlogo}/></Link>
     </>
   )
 }

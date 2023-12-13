@@ -12,6 +12,9 @@ import spiral from '../src/Components/Images/spiral-wildberry-vanilla-pinepple.j
 import twix from '../src/Components/Images/twix.jpeg'
 import yoghurt from '../src/Components/Images/yoghrut.jpeg'
 import vanilla from '../src/Components/Images/vanilla.jpg'
+import {BsFillArrowRightCircleFill} from "react-icons/bs";
+import {BsArrowLeftCircleFill} from "react-icons/bs";
+import { Link } from 'react-router-dom'
 function Sweets({add}) {
 
  const [swee,setfru]=useState([
@@ -88,7 +91,10 @@ const [stores,setStore]=useState("")
     <div className={style.topics}>Sweets</div><br></br>
     <div className={style.container}>
     <Product fru={actdata} add={add} />
+    
     </div>
+    <Link to ="/Fruits"><BsArrowLeftCircleFill className={style.beforelogo}/></Link>
+    <Link to ="/Biscuits"><BsFillArrowRightCircleFill className={style.nextlogo}/></Link>
     </>
   )
 }

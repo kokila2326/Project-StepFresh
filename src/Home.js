@@ -6,6 +6,10 @@ import style from "../src/Components/Css/home.module.css"
 import mainpic from '../src/Components/Images/download-app.png'
 import android from '../src/Components/Images/download-android.png'
 import ios from '../src/Components/Images/download-ios.png'
+import con1 from '../src/Components/Images/con2.jpg'
+import con2 from "../src/Components/Images/con2.jpg"
+import con3 from "../src/Components/Images/con2.jpg"
+import con4 from "../src/Components/Images/con2.jpg"
 
 function Home() {
   
@@ -19,6 +23,12 @@ function Home() {
         <img src={slide1}/>
       </div><br></br><br></br>
     </div>
+    <div className={style.homecontent}>
+        <img scr={con1}/>
+        <img scr={con2}/>
+        <img scr={con3}/>
+        <img scr={con4}/>
+      </div>
     <div className={style.smallcont}>
         <p>Explore our range of over <mark>200 products with us!! </mark></p>
     </div>
@@ -33,8 +43,8 @@ function Home() {
       </div>
       <div className={style.picture}>
             <img src={mainpic}/>
-
       </div>
+     
     </div>
     
     </>
@@ -43,4 +53,4 @@ function Home() {
 }
 
 
-export default Home
+export default Home;

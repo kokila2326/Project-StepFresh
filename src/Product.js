@@ -2,6 +2,7 @@ import React from 'react'
 import style from "./Components/Css/vegetable.module.css"
 
 
+
 function Product({fru,add}) {
   return (
     <>
@@ -19,6 +20,7 @@ function Product({fru,add}) {
             </>
         ))
         }
+        
         </>
   )
 }

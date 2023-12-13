@@ -58,24 +58,17 @@
 }
 .social{
     color: rgb(7, 67, 7); 
-    margin: 13%;
-    
-    
+    margin: 13%;   
 }
 .log:hover{
     color:white;}
     
 .log{
    font-size: 20px;
-   padding: 5%;
-  
-   
-   
+   padding: 5%;  
 }
 .box2 > h3{
-    color: rgb(0, 0, 0);
-    
-    
+    color: rgb(0, 0, 0);  
 }
  .lists{
     text-decoration: none;
@@ -84,4 +77,25 @@
     display: flex;
     
 }
+/* styles.module.css */
+
+.lastline {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(7, 67, 7);
+  }
+  
+  .lii {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .lii:hover {
+    color: #007bff;
+  }
+  
 

@@ -1,0 +1,85 @@
+/* contactUs.module.css */
+
+.contactUsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../Images/cat1.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.quoteContainer {
+    width: 40%; /* Adjust as needed */
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+.formContainer {
+    border-radius: 5px;
+    width: 40%; /* Adjust as needed */
+    background-color: rgb(174, 230, 171);
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.formContainer > h2 {
+    text-align: center;
+    color: black;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin: 10px;
+}
+
+label {
+    margin: 5px;
+    font-style: italic;
+}
+
+input,
+textarea {
+    padding: 15px;
+    margin: 5px;
+    width: 90%; /* Adjust as needed */
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    width: 80%; /* Adjust as needed */
+    margin-left: 20%; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+/* Responsive Media Queries */
+@media screen and (min-width: 768px) {
+    .contactUsContainer {
+        flex-direction: row;
+    }
+
+    .quoteContainer,
+    .formContainer {
+        width: 50%;
+    }
+
+    form {
+        margin-left: 0; /* Reset margin for form on larger screens */
+    }
+
+    button {
+        width: 50%; /* Adjust as needed */
+        margin-left: 25%; /* Adjust as needed */
+    }
+}

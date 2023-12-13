@@ -46,10 +46,10 @@ function Footer() {
       </div>
         </div>
           <div className={style.lastline}>
-            <li className={style.lii}> Terms and Conditions </li>
-            <li className={style.lii}> || Our Privacy Policy  </li>
-            <li className={style.lii}> || Shipping Details  </li>
-            <li className={style.lii}> || Refund Policy </li>
+            <Link to='/terms' className={style.lii}> Terms and Conditions </Link>
+            <Link to='/policy' className={style.lii}> Our Privacy Policy  </Link>
+            <Link to='/shipping details' className={style.lii}> Shipping Details  </Link>
+            <Link to='/refund' className={style.lii}> Refund Policy </Link>
           </div>
     </div>
   )

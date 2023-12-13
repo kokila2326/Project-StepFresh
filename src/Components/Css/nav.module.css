@@ -12,6 +12,13 @@
     background-color: rgb(174, 230, 171);
     height:100px
 }
+span{
+    color:rgb(255, 255, 255);
+    padding:8px;
+    font-size: small;
+    border-radius:70% ;
+     
+}
 
 .item{
     text-decoration: none;
@@ -38,3 +45,8 @@
         font-size: 15px;
     }
 }
+
+
+
+
+

@@ -20,7 +20,9 @@
 .picture > img{
     width: 90%;
 }
-
+.homecontent >img{
+    
+}
 @keyframes slider {
     25%  { transform: translateX(-100%); }
     50%  { transform: translateX(-200%); }
